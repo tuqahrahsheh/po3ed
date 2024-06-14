@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Application Form</title>
+    <link rel="stylesheet" href="edit.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Leave Application Form</h2>
+        <form id="leaveForm">
+            <div class="form-group">
+                <label for="employee">Employee Name:</label>
+                <select id="employee" class="form-control">
+                    <option value="Ahmad Omer">Ahmad Omer</option>
+                    <option value="Samer Nedal">Samer Nedal</option>
+                    <option value="Majed Kamal">Majed Kamal</option>
+                    <option value="Sajeda Abdullah">Sajeda Abdullah </option>
+                    <option value="Anwar Mohammed">Anwar Mohammed </option>
+                    <option value="Amani Saher">Amani Saher </option>
+                    <option value="Sarah Yousef ">Sarah Yousef </option>
+                    <option value="Zain Abdullah">Zain Abdullah </option>
+                    <option value="Salma Waleed">Salma Waleed </option>
+                    <option value="Haneen Rami">Haneen Rami</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="leaveType">Leave Type:</label>
+                <select id="leaveType" class="form-control">
+                    <option value="Annual Leave">Annual Leave</option>
+                    <option value="Sick Leave">Sick Leave</option>
+                    <option value="Maternity Leave">Maternity Leave</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="startTime">Start Time:</label>
+                <input type="time" id="startTime" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="endTime">End Time:</label>
+                <input type="time" id="endTime" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="reason">Reason:</label>
+                <textarea id="reason" class="form-control" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+        <!-- Hidden table -->
+        <div id="leaveApplications" style="display: none;">
+            <h2>Leave Applications</h2>
+            <table id="leaveApplicationsTable" class="table">
+                <thead>
+                    <tr>
+                        <th>Employee Name</th>
+                        <th>Leave Type</th>
+                        <th>Start Time</th>
+                        <th>End Time</th>
+                        <th>Reason</th>
+                    </tr>
+                </thead>
+                <tbody id="leaveApplicationsBody">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="edit.js"></script>
+</body>
+</html>
